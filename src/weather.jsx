@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Search, Droplets, Wind, Sun, Cloud, CloudRain } from "lucide-react";
-
+import Btn from './dark'
 function Weather() {
   const allIcon = {
     "01d": <Sun size={80} />,
@@ -41,7 +41,12 @@ const [city, setCity] = useState("");
   }, []);
 
   return (
+    <>
+    <Btn/>
     <div className="container">
+      
+
+
       {weatherData && (
         <div className="inpp">
           <div className="ii">
@@ -52,7 +57,7 @@ const [city, setCity] = useState("");
                 if (e.key === "Enter") search(city)
               })
             }} />
-            <button onClick={() => {
+            <button  className="bb" onClick={() => {
 search(city)
             }}>
               <Search size={22} />
@@ -81,8 +86,10 @@ search(city)
           </div>
         </div>
       )}
+     
     </div>
-  );
-}
+    </>
+  )
+    };
 
 export default Weather;

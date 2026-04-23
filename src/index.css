@@ -1,11 +1,4 @@
-:root{
-  background-color: rgb(170, 169, 169);
-  color: white;
 
-
-  justify-content: center;
-  align-items: center;
-}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -48,10 +41,12 @@ outline: none;
  margin-right: 20px;
  color: white;
  padding-left: 20px ;
+ font-size: 20px;
  background-color: rgb(129, 29, 29);
 
 }
-.inpp button {
+
+.bb {
    height: 45px;
    outline: none;
    border: 2px solid rgb(255, 58, 58);
@@ -91,7 +86,7 @@ outline: none;
   backdrop-filter: blur(10px);
 }
 
-.ii button {
+.bb {
   padding: 10px 15px;
   border-radius: 15px;
   border: none;
@@ -120,7 +115,7 @@ outline: none;
 }
 
 .b1, .b2 {
-  width: 35%;
+  width: 30%;
   padding: 15px;
   border-radius: 15px;
 
@@ -130,4 +125,36 @@ outline: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.Light button{
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #0703117a, #0c021a);
+ font-size: 16px;
+  font-weight: 700;
+  width: 30%;
+  height: 40px;
+  outline: none;
+  letter-spacing: 4px;
+  border-radius: 30px;
+  border: 2px solid rgb(15, 5, 19);
+
+}
+.dark button{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 700;
+  width: 30%;
+  height: 40px;
+  outline: none;
+  letter-spacing: 4px;
+  border-radius: 30px;
+  border: 2px solid white;
+  background: linear-gradient(135deg, #a17cff7a, #d7baff);
+}
+body.dark{
+  background: linear-gradient(135deg, #05010f, #1c0838);
+}
+button{
+display: block;
+margin-bottom: 20px;
 }
